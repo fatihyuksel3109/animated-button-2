@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    margin: 0;
+    color: #ffffff;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    position: relative;
+    padding: 10px 20px;
+    border: 2px solid #1c1c1e;
+    background-color: #1c1c1e;
+    color: #f0f0f0;
+    font-size: 16px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn .icon {
+    font-size: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn .text {
+    position: absolute;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.plus-button:hover {
+    width: 120px;
+    background-color: #333;
+    border-color: #333;
+}
+
+.plus-button:hover .icon {
+    transform: translateX(-60px);
+    opacity: 0;
+}
+
+.plus-button:hover .text {
+    opacity: 1;
+}
+
+.chevron-button:hover {
+    width: 120px;
+    background-color: #333;
+    border-color: #333;
+}
+
+.chevron-button:hover .icon {
+    transform: translateX(-60px);
+    opacity: 0;
+}
+
+.chevron-button:hover .text {
+    opacity: 1;
+}
